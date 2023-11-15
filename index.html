@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;      
+                  
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&family=Sriracha&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            color: white;
+            background-color: rgb(18, 151, 153);
+            
+        }
+        header nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vw;
+            
+            
+        }
+        
+        header nav a {
+            display: flex;
+            justify-content: center;
+            color: white;
+            text-decoration: none; 
+            width:10vw;
+   
+        }
+        .produto a{
+            
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+        }
+         header  h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+         }
+
+        main  {
+            background-color: rgb(255, 161, 133);
+            text-align: center;
+        }
+        
+        .text h2 {
+            
+            width: 18vw;
+            height: 10vh;
+            
+        }
+        .text p {
+
+            width: 70vw;
+            height: 4vw;
+            font-weight: bolder;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: white;
+                
+        }
+        .text{
+            
+            height: 12vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        section div img {
+            
+            display: inline-block;
+            
+        }
+
+        article {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            font-weight: bolder;
+            font-size: 20px;
+            
+
+        }
+        article a {
+            text-decoration: none;
+            color: black;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgb(18, 151, 153);
+            height: 15vh;
+            
+        }
+        
+        footer div#footimg  {
+            
+            width: 98vw;
+            height: 13vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+                
+        }
+
+        .socialmedia{
+                
+            width: 30vw;
+            height: 5vh;
+        }
+
+        .info {
+            width: 40vw;
+        }
+
+        .info a {
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        footer nav {
+           
+           width: 30vw;
+           display: flex;
+           justify-content: space-evenly;
+
+        }
+
+        a:hover {
+            color: black;
+            transition: 0.5s;
+        }
+
+        nav.socialmedia a:hover { 
+            transform: translate(-3px, -3px);
+            transition:  0.2s;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Portfólio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+        
+        <h1>No ritmo da batida
+            <img src="imgs/life-4244797_640 1.png" alt="Life" >
+        </h1>
+        
+            
+        <nav class="produto">
+            <a href="#">Artes & Designs</a>
+            <a href="#">Estilo & Música</a>
+            <a href="#">Ebooks & Vídeos</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="text">
+                <h2>Aquarela</h2>
+                <p> Uma brincadeira com fotos , cores e efeitos, curta, compartilhe e deixe seu comentário, ficarei feliz pelo feedback.</p>
+            </div>
+            <div class="img">
+                <img src="imgs/baila.png" alt="handstand">
+                <img src="imgs/vinil.png" alt="mp3">
+                <img src="imgs/radio.png" alt="radio">
+                <img src="imgs/fone.png" alt="women with phones">
+            </div>
+        </section>
+        <article>
+            <a href="#">Veja mais</a>
+        </article>
+    </main>
+    <footer>
+        <div id="footimg">
+            <nav class="socialmedia">
+                <a href="#"><img src="imgs/instagram.png" alt="icon insta"></a>
+                <a href=""><img src="imgs/facebook.png" alt="icon facebook"></a>
+                <a href=""><img src="imgs/linkedin (1).png" alt="icon linkedin"></a>
+                <a href=""><img src="imgs/pinterest.png" alt="icon pinterest"></a>
+            </nav>
+             
+            <nav class="info">
+            <a href="#">Portfólio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            </nav>     
+        </div>
+        
+    </footer>
+</body>
+</html>
