@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;      
+    box-sizing: border-box;
+          
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&family=Sriracha&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    color: white;
+    background-color: rgb(18, 151, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+header nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+}
+
+header nav a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    margin-block: 20px;
+
+}
+.produto a{
+    
+    /* width: 20vw; */
+    display: flex;
+    justify-content: center;
+}
+ header  .textHeader {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ header .textHeader h1 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+ }
+
+ header .textHeader img {
+    width: 50%;
+    margin-left: 5px;
+  }
+
+main section {
+    background-color: rgb(255, 161, 133);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text  {
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+   
+    
+}
+.text h2 {
+
+    text-transform: uppercase;
+    margin-block: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.text p {
+    margin-block: 20px;
+    font-weight: bolder;
+}
+
+section .imgContainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  section .imgContainer img {
+    margin: 20px 15px;
+    width: 30%;
+  }
+
+  main section a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-block: 20px;
+    text-decoration: none;
+  }
+  
+  main section a:hover {
+    text-decoration: underline;
+  }
+
+footer {
+    background-color: rgb(18, 151, 153);
+    width: 100%;    
+}
+
+footer #footimg  {
+    
+    width: 90%;
+    height: 13vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+        
+}
+
+.socialmedia{
+        
+    width: 20%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.info a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+nav.socialmedia a:hover { 
+    transform: translate(-3px, -3px);
+    transition:  0.2s;
+}
+
+@media only screen and (max-width: 320px){
+    header nav{
+        width: 100%;
+    }
+    header .textHeader {
+        width: 100%;
+  
+    }
+    header .textHeader h1{
+        font-size: 1rem;
+        margin-left: 11px;
+    }
+    .text{
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+    .text p{
+        font-size: .9rem;
+    }
+    section .imgContainer{
+        width: 100%;
+    }
+    section .imgContainer img{
+        width: 95%;
+    }
+    footer #footimg{
+        flex-direction: column;
+    }
+    .socialmedia{
+        margin-top: 15px;
+        width: 90%;
+    }
+    .info{
+        margin-block: 15px;
+        width: 99%;
+    }
+}
