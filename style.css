@@ -70,13 +70,13 @@ main section {
 }
 
 .text  {
-    width: 50%;
+    width: 100%;
     padding: 20px;
     margin-bottom: 20px;
   
     display: flex;
     flex-direction: column;
-    align-items: start; 
+    align-items: center; 
    
     
 }
@@ -94,7 +94,7 @@ main section {
 }
 
 section .imgContainer {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@ section .imgContainer {
 
   section .imgContainer img {
     margin: 20px 15px;
-    width: 30%;
+    width: 40%;
   }
 
   main section a {
@@ -125,7 +125,7 @@ footer {
 
 footer #footimg  {
     
-    width: 90%;
+    width: 100%;
     height: 13vh;
   
     display: flex;
@@ -203,3 +203,43 @@ nav.socialmedia a:hover {
         width: 99%;
     }
 }
+
+@media only screen and (min-width: 321px) and (max-width:1024px) {
+    header nav{
+        width: 70%;
+    }
+
+    .produto {
+        width: 100%;
+    }
+
+    section .imgContainer{
+        width: 100%;
+        }
+
+    section .imgContainer img {
+        margin: 20px 15px;
+        width: 50%;
+    }
+
+    .text {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    footer #footimg {
+        width: 100%;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    }
+
+  
+    
